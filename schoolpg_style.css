@@ -1,0 +1,450 @@
+* {box-sizing: border-box}
+body {font-family: Arial;}.mySlides {display: none}
+img {vertical-align: middle;}
+.navbar{
+  position: fixed;
+  top: 0;
+  font-weight: bold;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #ffa366;
+  height: 60px;
+  z-index: 9999;
+}
+
+.login{
+  color: black;
+  margin-right: 20px;
+  background-color: inherit;
+  float: right;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 16px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 16px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ff8533;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.logout{
+  float: right;
+  text-decoration: none;
+  color: black;
+  margin-right: 25px;
+  background:transparent;
+  cursor: pointer;
+  padding: 18px 16px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.tab a:hover {
+  background-color: #ff8533;
+}
+
+/* Create an active/current tablink class */
+.tab a.active {
+  background-color: #ccc;
+}
+
+input[type='submit']{
+  padding: 10px 20px;
+  background-color: red;
+  border-radius: 10px;
+  box-shadow: 5px 5px #888888;
+  color: white;
+  font-size: 25px;
+  margin-left: 40%;
+  margin-top: 10px;
+  margin-bottom: 25px; 
+}
+input[type="text"]{
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: inline-block;
+  background:transparent;
+  outline: none;
+  font-size: 20px;
+}
+
+table {
+margin-top: 15px;
+border-collapse: collapse;
+width: 100%;
+color: #17202A;
+font-family: monospace;
+font-size: 20px;
+text-align: left;
+}
+th {
+background-color: transparent;
+color: black;
+font-size: 20px;
+margin-top: 10px;
+}
+tr{
+  margin-top: 10px;
+}
+tr:nth-child(even) {background-color: #f2f2f2}
+
+h2{
+  margin-top: 0px;
+  font-weight: bold;
+  margin-left: 8%; 
+  font-size: 50px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+p{
+  margin-left: 25px;
+  font-size: 20px;
+  margin-right: 35px;
+
+}
+.header{
+  font-size: 25px;
+  color: #990000;
+  font-weight: bold;
+  margin-left: 25px;
+}
+body:before{
+  -webkit-background-size:cover;
+  background-size:cover;
+  -webkit-filter:blur(8px);
+  -moz-filter:blur(8px);
+  filter:
+}
+.container{
+  height: 100%;
+}
+
+.contact_form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 30%;
+  height: 75%;
+  padding: 80px 40px;
+  background:rgba(0,0,0,0.6);
+  border-color: red;
+  border-width: 50px;
+  position: fixed;
+  z-index: 9999;
+}
+.contact_form h2{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact_form p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 19;
+}
+.contact_form input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact_form input[type=text]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background:transparent;
+  outline: none;
+  height: 35px;
+  color: #fff;
+  font-size: 15px;
+}
+.contact_form input[type=password]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background:transparent;
+  outline: none;
+  height: 35px;
+  color: #fff;
+  font-size: 15px;
+}
+.contact_form input[type=submit]{
+  height: 35px;
+  color: #fff;
+  font-size: 17px;
+  background:red;
+  cursor:pointer;
+  border-radius: 25px;
+  border:none;
+  outline: none;
+  margin-top: 15%;
+  margin-left: 0px;
+  width: 100%;
+}
+.avatar{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  top: calc(-80px / 2);
+  left: calc(50% - 40px);
+}
+.contact_form a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+input[type=checkbox]{
+  width: 20%;
+}
+.account{
+  font-size: 100px;
+  font-weight: bold;
+  position:relative;
+  margin-bottom: 15px;
+  color: white;
+  padding: 25px;
+}
+.form_input{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.icon{
+  position: absolute;
+  right: 15px;
+  top: -10px;
+  font-size: 25px;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#hide1{
+  display: none;
+}
+.container { display: none; }
+.container.open { display: block; }
+
+.blocker {
+    position: absolute;
+    content: ' ';
+    top: 0px;
+    width: 100%;
+    height: 200%;
+    background: rgba(0,0,0,.5);
+    z-index: 9999;
+  }
+  .dropdown {
+  float: left;
+  overflow: hidden;
+  background-color: #ffa366;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 19px 16px;
+  width: 100%;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ff8533;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #ffa366;
+  max-height: 280px; 
+  overflow-y: auto; 
+  background-attachment: local, local, scroll, scroll; 
+}
+
+.dropdown-content button {
+  float: none;
+  color: black;
+  font-size: 20px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content button:hover {
+  background-color: #ff8533;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}/* Style the tab */
+
+
+
+
+
+
+
+
+
+
+
+
+

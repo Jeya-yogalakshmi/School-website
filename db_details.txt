@@ -1,0 +1,148 @@
+login:
+    S_no
+    Username
+    Password
+
+staffs:
+    S_no
+    Name
+    Phone Number
+    address
+    Class
+    subject
+    Dob
+
+pkg:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+lkg:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+ukg:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+1st:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+2nd:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+3rd:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+4th:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+5th:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+6th:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+7th:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+8th:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+9th:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+10th:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+11th:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
+
+12th:
+    S_no
+    Name
+    Gender
+    Parents Number
+    Dob
+    Blood group
+    address
